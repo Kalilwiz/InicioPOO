@@ -13,6 +13,7 @@
 //}
 
 using System.Reflection;
+using System.Threading.Channels;
 using POO;
 
 //Livro livro1 = new Livro();
@@ -52,40 +53,89 @@ using POO;
 //produto1.MostrarInformacoes();
 //produto1.CalcularTotal();
 
-Carro carro1 = new Carro(); // serve para criar um objeto - voce chama a classe, da um nome para a                               variavel e inicia o objeto
+//Carro carro1 = new Carro(); // serve para criar um objeto - voce chama a classe, da um nome para a                               variavel e inicia o objeto
 
-carro1.modificar("hb20");
-carro1.AnoDeFabricacao = 2020;
-carro1.Marca = "hyundai";
+//carro1.modificar("hb20");
+//carro1.AnoDeFabricacao = 2020;
+//carro1.Marca = "hyundai";
 
-Carro carro2 = new Carro()  // modo certo de instanciar um objeto
-{
-    AnoDeFabricacao = 1998,
-    Marca = "GM",
+//Carro carro2 = new Carro()  // modo certo de instanciar um objeto
+//{
+//    AnoDeFabricacao = 1998,
+//    Marca = "GM",
 
-};
+//};
 
-carro2.modificar("Vectra");
+//carro2.modificar("Vectra");
 
-Carro carro3 = new Carro()
-{
-    AnoDeFabricacao = 2024,
-    Marca = "Hyundai"
-};
+//Carro carro3 = new Carro()
+//{
+//    AnoDeFabricacao = 2024,
+//    Marca = "Hyundai"
+//};
 
-carro3.modificar("civic type R");
+//carro3.modificar("civic type R");
 
-List<Carro> ListarCarros = new List<Carro>();
+//List<Carro> ListarCarros = new List<Carro>();
 
-ListarCarros.Add(carro1);
-ListarCarros.Add(carro2);
-ListarCarros.Add(carro3);
+//ListarCarros.Add(carro1);
+//ListarCarros.Add(carro2);
+//ListarCarros.Add(carro3);
 
-foreach (Carro i in ListarCarros)
-{
-    i.MostrarInfomacoes();
-    Console.WriteLine(" ");
-}
+//foreach (Carro i in ListarCarros)
+//{
+//    i.MostrarInfomacoes();
+//    Console.WriteLine(" ");
+//}
+
+//ContaBancaria conta = new ContaBancaria();
+//while (true)
+//{
+//    Console.WriteLine("Depositar, Sacar, visualizar ou Sair? ");
+//    string resposta = Console.ReadLine().ToUpper();
+
+//    if (resposta == "DEPOSITAR")
+//    {
+//        Console.WriteLine("Digite o valor do deposito");
+//        double dep = double.Parse(Console.ReadLine());
+//        conta.Depositar(dep);
+//        Console.WriteLine($"Valor atual da conta");
+//        Console.WriteLine(conta.Mostrar());
+//    }
+
+//    else if (resposta == "SACAR")
+//    {
+//        Console.WriteLine("Digite o valor do deposito");
+//        double sac = double.Parse(Console.ReadLine());
+//        conta.Sacar(sac);
+//        Console.WriteLine($"Valor atual da conta");
+//        Console.WriteLine(conta.Mostrar());
+//    }
+//    else if (resposta == "VISUALIZAR")
+//    {
+//        Console.WriteLine(conta.Mostrar());
+//    }
+//    else if (resposta == "SAIR")
+//    {
+//        Console.WriteLine($"Valor atual da conta");
+//        Console.WriteLine(conta.Mostrar());
+//        Console.WriteLine("Encerrando");
+//        break;
+//    }
+//    else
+//    {
+//        Console.WriteLine("Digite um valor valido");
+//    }
+//}
+
+//Funcionario funcionario1 = new Funcionario();
+
+//funcionario1.SetSalario(2500);
+//Console.WriteLine(funcionario1.GetSalario());
+
+
+
+
 
 
 
