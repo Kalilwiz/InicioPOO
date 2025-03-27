@@ -10,8 +10,21 @@ namespace POO
     {
         public string Marca;
         public int AnoDeFabricacao;
-        public string modelo;   
+        private string modelo;   
 
+        public void modificar(string modificador)
+        {
+            if (modificador == "Vectra" || modificador == "impala" || modificador == "civic type R")
+            {
+                modelo = modificador;
+            }
+            else
+            {
+                Console.WriteLine("Apenas modelos de homem");
+                modificador = "carro de enzo";
+                modelo = modificador;
+            }
+        }
 
         public void Andar()
         {
